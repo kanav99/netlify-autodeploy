@@ -5,5 +5,5 @@
 		"npm run build"
 	],
 	"directory": "build",
-	"rebuild": 1
+	"rebuild": 0
 }
