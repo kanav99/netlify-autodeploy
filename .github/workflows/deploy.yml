@@ -40,7 +40,9 @@ jobs:
         uses: jitterbit/get-changed-files@v1
       
       - name: Deploy all
+        env:
+            NETLIFY_PERSONAL_ACCESS_TOKEN: ${{ secrets.NETLIFY_PERSONAL_ACCESS_TOKEN }}
         run: |
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
-            echo "Do something with this ${changed_file}."
+            python3 script.py "${changed_file}"
           done
