@@ -4,5 +4,6 @@
 		"npm install",
 		"npm run build"
 	],
-	"directory": "build"
+	"directory": "build",
+	"rebuild": 1
 }
