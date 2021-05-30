@@ -1,8 +1,5 @@
 {
-	"repository": "https://github.com/kanav99/optym",
-	"commands": [
-		"npm install",
-		"npm run build"
-	],
-	"directory": "build"
+  "repository": "https://github.com/optymtech/optym",
+  "commands": ["npm install", "npm run build"],
+  "directory": "build"
 }
