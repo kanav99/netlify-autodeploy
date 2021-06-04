@@ -37,6 +37,12 @@ def deploy(subdomain, config):
 	os.system("git clone " + config['repository'] + " repo")
 	os.chdir("repo")
 	
+	print_green("Setting Config")
+	siteConfig = json.dumps(config['siteConfig'])
+	f = open('src/config.js', 'w')
+	f.write('export default ' + siteConfig)
+	f.close()
+
 	print_green("Building")
 	for command in config['commands']:
 		os.system(command)
