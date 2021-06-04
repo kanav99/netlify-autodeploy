@@ -40,7 +40,7 @@ def deploy(subdomain, config):
 	print_green("Setting Config")
 	siteConfig = json.dumps(config['siteConfig'])
 	f = open('src/config.js', 'w')
-	f.write('export default ' + siteConfig)
+	f.write('const conf = ' + siteConfig + ';\nexport default conf;')
 	f.close()
 
 	print_green("Building")
