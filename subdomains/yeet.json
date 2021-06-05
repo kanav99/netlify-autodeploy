@@ -1,5 +1,0 @@
-{
-  "repository": "https://github.com/optymtech/optym",
-  "commands": ["npm install", "npm run build"],
-  "directory": "build"
-}
